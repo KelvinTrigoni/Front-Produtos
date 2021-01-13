@@ -1,0 +1,18 @@
+.logo{
+    background-image: url('../../images/angular-logo.png');
+}
+
+.titulo{
+    font-size: 30px;
+    text-align: center;
+}
+
+.subTitulo{
+    font-size: 20px;
+}
+
+.imagem{
+    width: 200px;
+}
+
+

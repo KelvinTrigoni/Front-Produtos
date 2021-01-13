@@ -1,0 +1,9 @@
+.border {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #454d55 !important;
+}
+
+.margin-top{
+    margin-top: 10px;
+}

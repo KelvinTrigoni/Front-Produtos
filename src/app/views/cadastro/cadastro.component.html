@@ -1,0 +1,29 @@
+<div class="container margin-top">
+    <div class="bloco">
+        <form class="row g-3" [formGroup]="produto"  (ngSubmit)="validaForm()">
+            <div class="col-md-12">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" [ngClass]="{'erro' : produto.controls.nome.errors && produto.controls.nome.dirty}" formControlName="nome">
+              <label class="erroLabel" [hidden]="!(produto.controls.nome.errors && produto.controls.nome.dirty)">Nome é obrigatório</label>
+            </div>
+            <div class="col-md-12">
+              <label class="form-label">Descrição</label>
+              <textarea class="form-control" rows="3" [ngClass]="{'erro' : produto.controls.descricao.errors && produto.controls.descricao.dirty}" formControlName="descricao"></textarea>
+              <label class="erroLabel" [hidden]="!(produto.controls.descricao.errors && produto.controls.descricao.dirty)">Descricao é obrigatório</label>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Preço</label>
+              <input type="number" class="form-control" [ngClass]="{'erro' : produto.controls.preco.errors && produto.controls.preco.dirty}" formControlName="preco">
+              <label class="erroLabel" [hidden]="!(produto.controls.preco.errors && produto.controls.preco.dirty)">Preço é obrigatório</label>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Quantidade</label>
+              <input type="number" class="form-control" [ngClass]="{'erro' : produto.controls.quantidade.errors && produto.controls.quantidade.dirty}" formControlName="quantidade">
+              <label class="erroLabel" [hidden]="!(produto.controls.quantidade.errors && produto.controls.quantidade.dirty)">Quantidade é obrigatório</label>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+          </form>
+    </div>
+</div>

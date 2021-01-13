@@ -1,0 +1,21 @@
+<div class="container margin-top">
+    <div class="titulo">Autenticar</div>
+
+    <div class="margin-top">
+        <div class="row justify-content-md-center">
+            <div class="col-md-3">
+                <div class="subTitulo"> Você {{auth}} está autenticado </div>
+            </div>
+            <div class="col-md-1">
+                <button type="button" class="btn btn-success" (click)="autenticar()">
+                    <span *ngIf="!load">Autenticar</span> 
+                    <span *ngIf="load" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="margin-top-2">
+        <img src="angular-logo.png" class="img-fluid rounded mx-auto d-block imagem">
+    </div>
+</div>
