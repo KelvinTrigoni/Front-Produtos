@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(){
     if(localStorage.getItem('token')){
       this.auth = 'já';
+      this.tost.openToast('success','autenticado');
     }else{
       this.auth = 'não';
     }

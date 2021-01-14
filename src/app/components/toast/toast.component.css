@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+section {
+    height: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+#toast {
+    position: fixed;
+    top: -8rem;
+    user-select: none;
+    color: white;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.2rem;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
+    transition: 0.4s ease;
+}
+
+#toast.show {
+    top: 2rem;
+}
+
+#toast.success {
+    background-color: rgb(81, 218, 81);
+}
+
+#toast.warning {
+    background-color: rgb(255, 75, 75);
+}
