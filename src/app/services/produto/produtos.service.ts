@@ -27,7 +27,15 @@ export class ProdutosService {
     return this.http.get(this.envServices.env["produtos"].api + 'produtos', this.httpOptions);
   }
 
+  public getProdutosById(id: string): Observable<any> {
+    return this.http.get(this.envServices.env["produtos"].api + `produtos/${id}`, this.httpOptions);
+  }
+
+  public putProdutos(body: Produto): Observable<any> {
+    return this.http.put(this.envServices.env["produtos"].api + 'produtos', body , this.httpOptions);
+  }
+
   public deleteProdutos(id: string): Observable<any> {
-    return this.http.delete(this.envServices.env["produtos"].api + 'produtos/' + id, this.httpOptions);
+    return this.http.delete(this.envServices.env["produtos"].api + `produtos/${id}`, this.httpOptions);
   }
 }

@@ -114,7 +114,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #343a40;
+    background: #4b535a;
     border-radius: 10px;
 }
 

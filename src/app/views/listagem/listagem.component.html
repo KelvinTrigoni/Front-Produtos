@@ -23,7 +23,7 @@
                 <td class="border center" style="width: 19%;">
                     <div class="row justify-content-md-center">
                         <div class="col-md-6">
-                            <button type="button" class="btn btn-success">Alterar</button>
+                            <button type="button" [routerLink]="['/atualizar/' + l.id]" class="btn btn-success">Alterar</button>
                         </div>
                         <div class="col-md-6">
                             <button type="button" class="btn btn-danger" (click)="excluir(l.id)">Excluir</button>

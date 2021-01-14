@@ -13,7 +13,7 @@
             </div>
             <div class="col-12">
               <label class="form-label">Preço</label>
-              <input type="number" class="form-control" [ngClass]="{'erro' : produto.controls.preco.errors && produto.controls.preco.dirty}" formControlName="preco">
+              <input currencyMask class="form-control" [ngClass]="{'erro' : produto.controls.preco.errors && produto.controls.preco.dirty}" formControlName="preco">
               <label class="erroLabel" [hidden]="!(produto.controls.preco.errors && produto.controls.preco.dirty)">Preço é obrigatório</label>
             </div>
             <div class="col-12">
@@ -22,7 +22,7 @@
               <label class="erroLabel" [hidden]="!(produto.controls.quantidade.errors && produto.controls.quantidade.dirty)">Quantidade é obrigatório</label>
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary">Cadastrar</button>
+              <button type="submit" class="btn btn-primary">{{alter ? 'Atualizar' : 'Cadastrar'}}</button>
             </div>
           </form>
     </div>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import _ from 'underscore';
 
-import { ToastComponent } from '../toast/toast.component';
+import { ToastComponent } from '../../components/toast/toast.component';
 import { ProdutosService } from './../../services/produto/produtos.service';
 
 @Component({
