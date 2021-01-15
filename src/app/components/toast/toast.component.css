@@ -6,17 +6,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-html,
-section {
-    height: 100%;
-}
-
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    font-family: sans-serif;
 }
 
 #toast {

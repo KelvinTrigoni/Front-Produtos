@@ -18,9 +18,9 @@ export class HomeComponent implements OnInit {
   auth: string;
 
   ngOnInit(){
-    if(localStorage.getItem('token')){
+    if(this.authService.authJWT()){
       this.auth = 'já';
-      this.tost.openToast('success','autenticado');
+      this.tost.openToast('success','Autenticado');
     }else{
       this.auth = 'não';
     }

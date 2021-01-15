@@ -17,12 +17,7 @@ export class NavBarComponent implements OnInit {
 
   montaString(local){
     if(local != ''){
-      var words = local.toLowerCase().split(" ");
-      for (var a = 0; a < words.length; a++) {
-          var w = words[a];
-          words[a] = w[0].toUpperCase() + w.slice(1);
-      }
-      this.tela = words.join(" ");
+      this.tela = local;
     }else{
       this.tela = 'Home';
     }
