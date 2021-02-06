@@ -40,4 +40,8 @@ export class HomeComponent implements OnInit {
         this.tost.openToast('warning','erro ao autenticar');
       });
   }
+
+  toast(){
+    this.tost.openToast('success','Ola o toast');
+  }
 }

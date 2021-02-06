@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "s"
+    }
+  },
+  "defaultProject": "s",
+  "cli": {
+    "analytics": false
+  }
 }
