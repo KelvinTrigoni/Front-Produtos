@@ -1,0 +1,79 @@
+<section class="container margin-top">
+  <div class="row center">
+    <div class="col-md-8">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >conteudo</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <div style="flex-direction: row; display: flex;" class="center">
+        <div style="padding: 10px;">
+          <button type="button" class="btn btn-success" (click)="openToast()">
+            ENVIAR
+          </button>
+        </div>
+
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            modal
+          </button>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content" style="background-color: rgb(37, 37, 37)">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Email</h5>
+              <button
+                type="button"
+                class="btn-close"
+                style="background-color: white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Esse email serve para reportar um problema</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                style="background-color: red; border-color: red;"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

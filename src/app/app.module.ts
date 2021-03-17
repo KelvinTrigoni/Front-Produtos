@@ -12,6 +12,7 @@ import { ToastComponent } from './components/toast/toast.component';
 import { ListagemComponent } from './views/listagem/listagem.component';
 import { FormularioComponent } from './views/formulario/formulario.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
+import { PaisesComponent } from './views/paises/paises.component';
 
 export const CustomCurrencyMaskConfig: CurrencyMaskConfig = {
   align: 'left',
@@ -31,7 +32,8 @@ export const CustomCurrencyMaskConfig: CurrencyMaskConfig = {
     ToastComponent,
     ListagemComponent,
     FormularioComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PaisesComponent
   ],
   imports: [
     routers,

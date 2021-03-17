@@ -63,6 +63,7 @@ export class FormularioComponent implements OnInit {
   }
 
   validaForm() {
+    this.produto.value.preco = String(this.produto.value.preco);
     let msg: string = '';
     if (this.produto.status == 'INVALID') {
       this.toast.openToast('warning', `Preencha os campos.`);

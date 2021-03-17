@@ -11,7 +11,7 @@ import { ToastComponent } from '../../components/toast/toast.component';
 export class HomeComponent implements OnInit {
   constructor(
     private authService: AuthService,
-    private tost: ToastComponent
+    private toast: ToastComponent
   ) { }
 
   load: boolean = false;
@@ -20,12 +20,12 @@ export class HomeComponent implements OnInit {
   ngOnInit(){
     if(this.authService.authJWT()){
       this.auth = 'já';
-      this.tost.openToast('success','Autenticado');
+      this.toast.openToast('success','Autenticado');
     }else{
       this.auth = 'não';
     }
   }
-  
+
   autenticar(){
     this.load = true;
     this.authService.autenticar()
@@ -33,15 +33,16 @@ export class HomeComponent implements OnInit {
         localStorage.setItem('token', suc.token);
         this.load = false;
         this.auth = 'já';
-        this.tost.openToast('success','autenticado');
+        this.toast.openToast('success','autenticado');
         document.location.reload();
       }, error =>{
         console.log(error);
-        this.tost.openToast('warning','erro ao autenticar');
+        this.load = false;
+        this.toast.openToast('warning','erro ao autenticar');
       });
   }
 
-  toast(){
-    this.tost.openToast('success','Ola o toast');
+  openToast(){
+    this.toast.openToast('success','Olha o toast');
   }
 }

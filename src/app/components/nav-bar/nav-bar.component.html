@@ -1,19 +1,25 @@
 <nav class="navbar navbar-dark bg-dark ">
-    <div class="container-fluid">
-        <a class="navbar-brand">{{tela | titlecase}}</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="container-fluid flex-none">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand margin">{{tela | titlecase}}</a>
+        <div class="collapse navbar-collapse margin-nav" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" (click)="montaString('home')" [routerLink]="['/home']" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Home</a>
+              <a class="nav-link active barra pad" (click)="montaString('home')" [routerLink]="['/home']" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" (click)="montaString('cadastro')" [routerLink]="['/cadastro']" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Cadastro</a>
+              <a class="nav-link active barra pad" (click)="montaString('cadastro')" [routerLink]="['/cadastro']" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Cadastro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" (click)="montaString('listagem')" [routerLink]="['/listagem']" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Listagem</a>
+              <a class="nav-link active barra pad" (click)="montaString('listagem')" [routerLink]="['/listagem']" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Listagem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active barra pad" (click)="montaString('paises')" [routerLink]="['/paises']" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">paises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active barra pad" (click)="montaString('lazy')" [routerLink]="['/lazy']" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">lazy</a>
             </li>
           </ul>
         </div>

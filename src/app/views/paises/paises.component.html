@@ -1,0 +1,21 @@
+<div class="container margin-top">
+    <div class="bloco">
+        <div class="row g-3">
+            <input name="pais" class="form-control background-card" type="text" placeholder="Digite o nome do pais em inglês" (input)="filtra($event.target.value)">
+            <div *ngFor="let p of filtro" class="col-md-4">
+                <div class="card background-card">
+                    <img src="{{p.flag}}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{p.nativeName}}</h5>
+                        <p class="card-text">{{p.regionalBlocs[0]?.otherNames[1]}}</p>
+                    </div>
+                    <ul class="list-group list-group-flush background-card">
+                        <li class="list-group-item background-card">Sigla: {{p.alpha2Code}}</li>
+                        <li class="list-group-item background-card">Capital: {{p.capital}}</li>
+                        <li class="list-group-item background-card">Populção: {{p.population | number}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

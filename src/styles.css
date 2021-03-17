@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 body {
     background-color: rgb(37, 37, 37);
-    font-family: 'Nunito', sans-serif; 
+    font-family: 'Nunito', sans-serif;
 }
 
 div {
@@ -14,7 +14,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
 .text-align-center {
     text-align: center !important;
 }
@@ -73,6 +72,35 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .erroLabel {
     color: #ff3535;
     font-size: 12px;
+}
+
+.flex-none{
+    display: block !important;
+}
+
+.margin{
+    margin-left: 8px;
+}
+
+.barra{
+    transition: .3s;
+}
+
+.barra:hover{
+    transition: .3s;
+    border-left: 4px solid white;
+}
+
+.margin-nav{
+    margin-top: 10px;
+}
+
+.pad{
+    padding-left: 10px !important;
+}
+
+.background-card{
+    background-color: #343a40 !important;
 }
 
 /* width */
